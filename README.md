@@ -1,68 +1,56 @@
--- # Banking Analytics EDA & Power BI Dashboard
--- 
+-- **Banking Analytics EDA & Dashboard Project**
+--
 -- This project walks through an end-to-end banking analytics workflow using Python, MySQL, and Power BI.
--- The goal is to perform risk analytics for lending decisions and turn raw banking data into an interactive dashboard.
--- 
--- ## Problem Statement
--- 
--- Develop a basic understanding of risk analytics in banking and financial services.
--- Use customer data to understand how banks can minimize the risk of losing money while lending.
--- Analyze different customer segments (high, medium, and low income) and their loan and deposit behavior.
--- 
--- ## What This Project Covers
--- 
--- Clean and prepare a banking dataset for analysis.
--- Perform exploratory data analysis (EDA) in Python, including univariate and bivariate analysis.
--- Engineer features such as income bands (low, mid, high) from estimated income.
--- Load the cleaned data into a MySQL database and connect it to Python via a SQL connector.
--- Use SQL for structured queries and data validation.
--- Build an interactive Power BI dashboard on top of the MySQL (or CSV) data source.
--- Design pages for loan analysis, deposit analysis, and a summary view for stakeholders.
--- 
--- ## Dataset Overview
--- 
--- Client attributes: age, location ID, year of joining the bank, nationality, occupation, and gender.
--- Financial attributes: estimated income, superannuation, savings, banking deposits, banking loans, credit card balance.
--- Relationship attributes: number of credit cards, banking relationship ID (retail, institutional, private, commercial), advisor IDs, properties owned, risk weighting.
--- Target use case: understand which types of customers are more risky or more profitable from a lending and deposit perspective.
--- 
--- ## Tools & Skills Demonstrated
--- 
--- Python: data cleaning, feature engineering, exploratory data analysis, and visualization.
--- SQL / MySQL: table creation, data loading from CSV, and querying for analysis.
--- Power BI: KPI cards, navigation buttons, slicers, and multi-page dashboard design.
--- Excel / CSV: initial format of the banking dataset before loading into MySQL.
--- Statistics: descriptive statistics and correlation analysis for numeric features.
--- 
--- ## End-to-End Workflow
--- 
--- 1. Convert the original Excel banking file into CSV.
--- 2. Import the CSV into MySQL and create a database and customer table.
--- 3. Connect Python to MySQL using a connector and read the data into a DataFrame.
--- 4. Inspect shape, data types, and missing values to validate data quality.
--- 5. Run descriptive statistics and univariate analysis on key numeric features.
--- 6. Analyze categorical features such as banking relationship, nationality, and occupation.
--- 7. Create new features like income band (low / mid / high) from estimated income.
--- 8. Build correlation heatmaps to understand relationships between deposits, loans, and account balances.
--- 9. Export or connect the cleaned data to Power BI.
--- 10. Design a multi-page dashboard (Home, Loan Analysis, Deposit Analysis, Summary) with slicers and KPIs.
--- 
--- ## Example KPIs
--- 
+-- The goal is to analyze customer behavior, assess banking risk, and present insights through an interactive dashboard.
+--
+-- **Problem Statement**
+-- Develop a basic understanding of banking risk analytics and learn how data helps minimize lending risks.
+-- Evaluate how customer income, deposits, loans, and financial behavior influence risk.
+--
+-- **What This Project Includes**
+-- Clean and prepare banking data for analysis.
+-- Perform exploratory data analysis (EDA) in Python.
+-- Engineer features like income band (low, mid, high).
+-- Import the dataset into MySQL and run SQL queries.
+-- Connect Python to MySQL for structured data processing.
+-- Build an interactive Power BI dashboard with slicers and KPIs.
+--
+-- **Dataset Overview**
+-- Customer details: age, nationality, gender, occupation, relationship type.
+-- Financial metrics: estimated income, deposits, loans, credit card balance, savings, checking accounts.
+-- Relationship fields: advisor ID, banking relationship ID, number of credit cards, properties owned.
+--
+-- **Tools & Skills Used**
+-- Python: pandas, seaborn, matplotlib for EDA.
+-- SQL/MySQL: database setup, table creation, importing CSV files.
+-- Power BI: page navigation, slicers, KPI cards, visuals, layout design.
+-- Excel/CSV: initial data source format.
+-- Statistics: correlation analysis, distributions, descriptive metrics.
+--
+-- **End-to-End Workflow**
+-- Convert Excel file to CSV for easier processing.
+-- Create a MySQL database and import the dataset.
+-- Connect Python to MySQL using a SQL connector.
+-- Explore data structure, shape, missing values, and data distribution.
+-- Perform univariate and bivariate analysis of numeric and categorical variables.
+-- Create categorical income bands for segmentation.
+-- Build heatmaps for correlation between loans, deposits, and balances.
+-- Load the cleaned dataset into Power BI.
+-- Create Home, Loan Analysis, Deposit Analysis, and Summary dashboard pages.
+--
+-- **Key Banking KPIs**
 -- Total Loan = Bank Loan + Business Lending + Credit Card Balance.
 -- Total Deposit = Bank Deposit + Savings Account + Checking Account + Foreign Currency Account.
--- Supporting KPIs: total clients, total fees, total credit card amount, savings and checking balances.
--- 
--- ## Dashboard Design
--- 
--- Home / Summary page with key KPIs and navigation buttons.
--- Loan Analysis page showing bank loans, business lending, and credit card balance by income band, segment, and nationality.
--- Deposit Analysis page showing deposits, savings, checking, and foreign currency accounts by segment and income band.
--- Slicers for year of joining, gender, banking relationship, and advisor.
--- Layout and visuals designed in Canva first, then implemented in Power BI.
--- 
--- ## Learning Focus
--- 
--- Show how real data analytics work is often split: EDA, data preparation, SQL modeling, and dashboarding.
--- Practice combining Python, SQL, and Power BI into a single portfolio project.
--- Build intuition for banking risk analytics and customer segmentation using real-world style data.
+-- Additional KPIs: Total Clients, Total Fees, Total CC Amount, Savings Balance.
+--
+-- **Dashboard Design Overview**
+-- Home/Summary page with major KPIs and page navigation.
+-- Loan Analysis page showing loans segmented by income, occupation, nationality, and relationship type.
+-- Deposit Analysis page showing deposits, savings, checking, and foreign currency accounts.
+-- Slicers for Year of Joining, Gender, Banking Relationship, and Advisor.
+-- Background visuals designed in Canva for clean UI.
+--
+-- **Main Learning Outcomes**
+-- Understand how a real analytics workflow is structured from raw data to insights.
+-- Learn how to combine Python, SQL, and Power BI to build a portfolio-ready project.
+-- Develop intuition around banking analytics, customer segmentation, and risk indicators.
