@@ -1,6 +1,6 @@
 -- # Banking Analytics EDA & Power BI Dashboard
 -- 
-- This project walks through an end-to-end banking analytics workflow using Python, MySQL, and Power BI.
+-- This project walks through an end-to-end banking analytics workflow using Python, MySQL, and Power BI.
 -- The goal is to perform risk analytics for lending decisions and turn raw banking data into an interactive dashboard.
 -- 
 -- ## Problem Statement
